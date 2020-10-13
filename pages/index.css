@@ -1,0 +1,228 @@
+@import url(./../vendor/normalize.css);
+@import url(./../vendor/fonts/fonts.css);
+@import url(./../blocks/page/page.css);
+@import url(../blocks/color/color.css);
+@import url(./../blocks/section/section.css);
+@import url(./../blocks/header/header.css);
+@import url(./../blocks/header/__logo/header__logo.css);
+@import url(./../blocks/header/__lang/header__lang.css);
+@import url(./../blocks/header/__item/header__item.css);
+@import url(./../blocks/header/__lang-link/header__lang-link.css);
+@import url(./../blocks/header/__lang-link/_active/header__lang-link_active.css);
+@import url(./../blocks/lead/lead.css);
+@import url(./../blocks/lead/__title/lead__title.css);
+@import url(./../blocks/lead/__subtitle/lead__subtitle.css);
+@import url(./../blocks/lead/__figure/lead__figure.css);
+@import url(./../blocks/lead/__image/lead__image.css);
+@import url(./../blocks/lead/__caption/lead__caption.css);
+@import url(./../blocks/intro/intro.css);
+@import url(./../blocks/intro/__size/intro__size.css);
+@import url(./../blocks/intro/__title/intro__title.css);
+@import url(./../blocks/intro/__text/intro__text.css);
+@import url(./../blocks/intro/__list/intro__list.css);
+@import url(./../blocks/intro/__span/intro__span.css);
+@import url(./../blocks/photo-grid/photo-grid.css);
+@import url(./../blocks/photo-grid/__item/photo-grid__item.css);
+@import url(./../blocks/places/places.css);
+@import url(./../blocks/place/place.css);
+@import url(./../blocks/place/__title/place__title.css);
+@import url(./../blocks/place/__website/place__website.css);
+@import url(./../blocks/place/__image/place__image.css);
+@import url(./../blocks/place/__url-heading/place__url-heading.css);
+@import url(./../blocks/place/__link/place__link.css);
+@import url(./../blocks/place/__paragraph/place__paragraph.css);
+@import url(./../blocks/video/video.css);
+@import url(./../blocks/video/__content/video__content.css);
+@import url(./../blocks/content-title/content-title.css);
+@import url(./../blocks/title-width/title-width.css);
+@import url(./../blocks/content-subtitle/content-subtitle.css);
+@import url(./../blocks/subtitle-width/subtitle-width.css);
+@import url(./../blocks/video/video__conteiner/video__conteiner.css);
+@import url(./../blocks/conteiner__item/conteiner__item.css);
+@import url(./../blocks/comments/comments.css);
+@import url(./../blocks/comments/__image/comments__image.css);
+@import url(./../blocks/comments/__conteiner/comments__conteiner.css);
+@import url(./../blocks/comments/__quote/comments__quote.css);
+@import url(./../blocks/comment/comment.css);
+@import url(./../blocks/comments/__author/comments__author.css);
+@import url(./../blocks/cover/cover.css);
+@import url(./../blocks/cover/__overlay/cover__overlay.css);
+@import url(./../blocks/cover/__background/cover__background.css);
+@import url(./../blocks/cover/__title/cover__title.css);
+@import url(./../blocks/cover/__subtitle/cover__subtitle.css);
+@import url(./../blocks/footer/footer.css);
+@import url(./../blocks/footer/__links/footer__links.css);
+@import url(./../blocks/footer/__item/footer__item.css);
+@import url(./../blocks/footer/__link/footer__link.css);
+@import url(./../blocks/footer/__copyright/footer__copyright.css);
+
+
+.video {
+    margin:102px auto 0 auto;
+    max-width: 1184px;
+}
+.content-title {
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 78px;
+    text-align: center;
+}
+.title-width {
+    max-width: 800px;
+    margin: 0 auto 48px auto;
+}
+.content-subtitle {
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 35px;
+    text-align: center;
+}
+.subtitle-width {
+    max-width: 640px;
+    margin: 0 auto 72px auto;
+}
+
+.video__conteiner {
+    display: flex;
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.video__list {
+    margin-right: 18px;
+    
+}
+
+.video__list:nth-child(2) {
+    margin-right: 0;
+}
+.conteiner__item {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+
+.comments {
+    max-width: 1184px;
+    margin: 102px auto 0 auto;
+}
+.comments__conteiner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.comments__image {
+    max-width: 97px;
+    max-height: 97px;
+    object-fit: cover;
+    border-radius: 50px;;
+    }
+    
+.comments__quote {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    max-width: 382px;
+    margin: 42px 0 24px 0;
+}
+.comments__author {
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 22px;
+    max-width: 382px;
+    margin: 0;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .video__list {
+        margin-right: 16px;}
+    
+    .comments__quote {
+        max-width: 296px;}
+
+    .comments__author {
+        max-width: 296px;}
+        
+    .title-width {
+        max-width: 928px;
+        }}
+
+@media screen and (max-width: 768px) {
+    .title-width {
+        max-width: 443px;
+        font-size: 42px;
+        line-height: 46px;
+        margin: 0 auto 31px auto;}
+        
+    .subtitle-width {
+        margin: 0 auto 56px auto;}
+    
+    .comments__conteiner {
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;}
+
+    .comments {
+        max-width: 660px;
+    }
+
+    .comment {
+        display: flex;
+        flex-direction: column;
+        align-items: center;}
+
+    .comments__author {
+        order: 2;
+        margin: 16px 0 24px 0;
+        max-width: 382px;
+    }
+
+    .comments__quote {
+        order: 3;
+        margin: 0 0 42px 0;
+        max-width: 382px;
+        font-size: 16px;
+        line-height: 23px;
+    }
+
+    .comments__margin {
+        margin: 0;
+    }}
+
+@media screen and (max-width: 376px) {
+    .title-width {
+        max-width: 343;
+        font-size: 32px;
+        line-height: 35px;
+        margin: 0 auto 16px auto;}
+    
+    .subtitle-width {
+        max-width: 343;
+        font-size: 16px;
+        line-height: 23px;
+        margin: 0 auto 24px auto;}
+
+    .video__conteiner {
+        flex-wrap: wrap;
+    }
+
+    .video__list {
+        margin: 0 0 8px 0;
+    }
+
+    
+
+        
+}
+
+
+/* {
+    outline: 1px solid red;
+}
+
+
+
+
