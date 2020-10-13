@@ -1,1 +1,9 @@
+.comment {
+    margin: 0;
+}
 
+@media screen and (max-width: 768px) {
+    .comment {
+        display: flex;
+        flex-direction: column;
+        align-items: center;}}

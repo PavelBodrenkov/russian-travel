@@ -1,0 +1,23 @@
+.title-width {
+    max-width: 800px;
+    margin: 0 auto 48px auto;
+}
+
+@media screen and (max-width: 1024px) {
+    .title-width {
+        max-width: 928px;
+        }}
+
+ @media screen and (max-width: 768px) {
+    .title-width {
+        max-width: 443px;
+        font-size: 42px;
+        line-height: 46px;
+        margin: 0 auto 31px auto;}}
+        
+@media screen and (max-width: 376px) {
+    .title-width {
+        max-width: 343;
+        font-size: 32px;
+        line-height: 35px;
+        margin: 0 auto 16px auto;}}

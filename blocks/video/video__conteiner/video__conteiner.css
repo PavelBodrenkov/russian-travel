@@ -1,0 +1,12 @@
+.video__conteiner {
+    display: flex;
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 376px) {
+    .video__conteiner {
+        flex-wrap: wrap;
+    }}

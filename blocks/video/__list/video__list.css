@@ -1,0 +1,15 @@
+.video__list {
+    margin-right: 18px;    
+}
+.video__list:nth-child(2) {
+    margin-right: 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .video__list {
+        margin-right: 16px;}}
+
+@media screen and (max-width: 376px) {
+    .video__list {
+        margin: 0 0 8px 0;}}
+            
