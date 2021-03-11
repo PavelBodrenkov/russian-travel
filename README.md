@@ -14,5 +14,8 @@
 ## Планы по доработке
 > В дальнейшем планирую доработать адаптивность.
 
-## ссылка на проект на github
+## Ссылка на проект на github
 https://pavelbodrenkov.github.io/russian-travel/.
+
+## Фото проекта
+![image](https://user-images.githubusercontent.com/70709823/110811259-97992200-8297-11eb-95a4-3a82b53c1add.png)
