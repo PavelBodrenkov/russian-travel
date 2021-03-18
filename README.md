@@ -1,4 +1,4 @@
-# Проект 3: Путешествие по России
+# Проект: Путешествие по России
 
 [Проект на github-pages](https://pavelbodrenkov.github.io/russian-travel/.)
 
